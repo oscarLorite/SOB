@@ -32,7 +32,7 @@
             <div id="header">
                 <div id="header2">
                     <h1><a id="nolink" href="index.jsp">Pràctica 1</a></h1>
-                    <p>Hola, $Nom! 
+                    <p>Hola, $Nom!
                     <span style="float:right"><button type="button" onclick="mostrar()">Accedeix</button></span>
                 </div>
             </div>
