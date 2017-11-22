@@ -53,7 +53,7 @@ private List<String> resetDatabase(boolean force) throws Exception {
             + " dataDefensa DATE, nota VARCHAR(3), dataCreacio DATE, dataModificacio DATE)",
             "CREATE TABLE " + dbname + ".tfgVsDirector ("
             + " id INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY (START WITH 1, INCREMENT BY 1),"
-            + " treball_id INT, professor_id INT",
+            + " treball_id INT, professor_id INT, FOREIGN KEY (treball_id) REFERENCES " + dbname + ".treballs(id))",
             "CREATE TABLE " + dbname + ".tfgVsEstudiant ("
             + " id INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY (START WITH 1, INCREMENT BY 1),"
             + " treball_id INT, estudiant VARCHAR(30))"};
